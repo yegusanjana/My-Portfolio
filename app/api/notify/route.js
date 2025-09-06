@@ -5,23 +5,28 @@ export async function POST(req) {
     const ip =
       req.headers.get("x-forwarded-for")?.split(",")[0] || "unknown"
     const userAgent = req.headers.get("user-agent") || "unknown"
-
+    const now = new Date()
+    const formattedTime = new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/Chicago",
+      dateStyle: "full",
+      timeStyle: "long"
+    }).format(now)
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS  
       }
     })
     await transporter.sendMail({
       from: `"Portfolio Tracker" <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER,
-      subject: " New Portfolio Visit",
+      to: process.env.EMAIL_USER, 
+      subject: "New Portfolio Visit",
       text: `A new visitor opened your portfolio site:
 
 IP: ${ip}
 User-Agent: ${userAgent}
-Time: ${new Date().toLocaleString()}
+Time: ${formattedTime}
 
 Cheers,
 Your Portfolio Bot`,
