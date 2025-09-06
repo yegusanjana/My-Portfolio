@@ -6,6 +6,7 @@ import { IBM_Plex_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
+import Tracker from "./tracker"  
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -37,9 +38,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${openSans.variable} ${sourceSerif4.variable} ${ibmPlexMono.variable} antialiased`}>
+      <body
+        className={`font-sans ${openSans.variable} ${sourceSerif4.variable} ${ibmPlexMono.variable} antialiased`}
+      >
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
+        <Tracker />  
       </body>
     </html>
   )
