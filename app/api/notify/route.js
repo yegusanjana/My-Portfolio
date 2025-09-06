@@ -7,22 +7,15 @@ export async function POST(req) {
     const userAgent = req.headers.get("user-agent") || "unknown"
 
     let transporter = nodemailer.createTransport({
-      host: "smtp.office365.com",
-      port: 587,
-      secure: false,
+      service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER, 
-        pass: process.env.EMAIL_PASS,
-      },
-      tls: {
-        ciphers: "SSLv3",
-      },
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
+      }
     })
-
-
     await transporter.sendMail({
       from: `"Portfolio Tracker" <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER, 
+      to: process.env.EMAIL_USER,
       subject: " New Portfolio Visit",
       text: `A new visitor opened your portfolio site:
 
