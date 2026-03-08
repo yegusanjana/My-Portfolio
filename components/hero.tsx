@@ -68,7 +68,7 @@ const Hero = () => (
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-medium px-8 py-3 bg-transparent"
             >
               <a
-                href="mailto:ya11@illinois.edu"
+                href="mailto:yegusanjanaannamalai@gmail.com"
                 aria-label="Send Email"
               >
                 Email
