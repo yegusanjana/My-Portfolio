@@ -35,7 +35,7 @@ const About = () => (
             I am a Software Engineer and MCS student at UIUC, specializing in Distributed Systems and Applied AI. My work is centered on building infrastructure that handles scale and complexity.
           </p>
           <p>
-            At Ozone Cloud, I spent two years architecting Go-based microservices to orchestrate workflows across 1,000+ repositories and managing multi-cloud disaster recovery with Kubernetes and Velero. This experience gave me a deep interest in system reliability and the "hard" problems of concurrency—specifically scaling system capacity by 10x and reducing deadlocks by 95%.
+            At Ozone Cloud, I spent two years architecting Go-based microservices to orchestrate workflows across 1,000+ repositories and managing multi-cloud disaster recovery with Kubernetes and Velero. This experience gave me a deep interest in system reliability and the "hard" problems of concurrency, specifically scaling system capacity by 10x and reducing deadlocks by 95%.
           </p>
           <p>
             Currently, I’m focused on the intersection of systems and intelligence. At the Beckman Institute and ACES, I’ve been building the "plumbing" for modern AI, specifically 3D gaze estimation pipelines and agentic RAG workflows using LangGraph and Azure AI Search. I prioritize making AI systems observable and production-ready through the lens of a systems engineer.

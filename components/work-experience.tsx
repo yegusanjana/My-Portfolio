@@ -536,6 +536,23 @@ export default function WorkExperience() {
 
   const toggle = (id: string) => setOpenId((prev) => (prev === id ? null : id))
 
+  // Helper to parse the start date from the year string
+  function getStartDate(role: RoleEntry): Date {
+    // Try to extract the first date (format: 'MMM YYYY') from role.year
+    const match = role.year.match(/([A-Za-z]+)\s(\d{4})/)
+    if (match) {
+      const [_, month, year] = match
+      // Parse month name to number
+      const monthNum = new Date(`${month} 1, 2000`).getMonth()
+      return new Date(Number(year), monthNum)
+    }
+    // Fallback: use Jan 1970
+    return new Date(1970, 0)
+  }
+
+  // Sort roles by start date descending (most recent first)
+  const sortedRoles = [...roles].sort((a, b) => getStartDate(b).getTime() - getStartDate(a).getTime())
+
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-5xl mx-auto">
@@ -553,7 +570,7 @@ export default function WorkExperience() {
           <div className="absolute left-[9rem] top-0 bottom-0 w-px bg-primary/20 hidden md:block" />
 
           <div className="space-y-8">
-            {roles.map((role) => {
+            {sortedRoles.map((role) => {
               const isOpen = openId === role.id
               const Detail = detailMap[role.id]
 
