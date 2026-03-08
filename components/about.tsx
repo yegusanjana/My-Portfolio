@@ -30,26 +30,15 @@ const About = () => (
 
       <Card className="shadow-lg border-border">
         <CardContent className="pt-8 space-y-6 text-[0.95rem] leading-relaxed text-muted-foreground">
+          <h3 className="text-xl font-bold text-primary mb-2">Software Engineer | MCS @ UIUC</h3>
           <p>
-            I am a <span className="text-foreground font-medium">Software Engineer</span> and{" "}
-            <span className="text-foreground font-medium">MCS student at UIUC</span>, specializing in
-            Distributed Systems and Applied AI.
+            I am a Software Engineer and MCS student at UIUC, specializing in Distributed Systems and Applied AI. My work is centered on building infrastructure that handles scale and complexity.
           </p>
-
           <p>
-            My background is centered on building infrastructure that handles scale and complexity. At{" "}
-            <span className="text-foreground font-medium">Ozone Cloud</span>, I spent two years architecting
-            Go-based microservices to orchestrate workflows across 1,000+ repositories and managing multi-cloud
-            disaster recovery with Kubernetes and Velero. This experience gave me a deep interest in system
-            reliability and the &ldquo;hard&rdquo; problems of concurrency.
+            At Ozone Cloud, I spent two years architecting Go-based microservices to orchestrate workflows across 1,000+ repositories and managing multi-cloud disaster recovery with Kubernetes and Velero. This experience gave me a deep interest in system reliability and the "hard" problems of concurrency—specifically scaling system capacity by 10x and reducing deadlocks by 95%.
           </p>
-
           <p>
-            Currently, I&rsquo;m focused on the intersection of systems and intelligence. At the{" "}
-            <span className="text-foreground font-medium">Beckman Institute</span> and{" "}
-            <span className="text-foreground font-medium">ACES</span>, I&rsquo;ve been building the
-            &ldquo;plumbing&rdquo; for modern AI—specifically 3D gaze estimation pipelines and agentic RAG
-            workflows using LangGraph and Azure AI Search.
+            Currently, I’m focused on the intersection of systems and intelligence. At the Beckman Institute and ACES, I’ve been building the "plumbing" for modern AI, specifically 3D gaze estimation pipelines and agentic RAG workflows using LangGraph and Azure AI Search. I prioritize making AI systems observable and production-ready through the lens of a systems engineer.
           </p>
         </CardContent>
       </Card>

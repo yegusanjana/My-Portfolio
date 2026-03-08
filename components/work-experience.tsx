@@ -62,7 +62,7 @@ const roles: RoleEntry[] = [
   {
     id: "beckman",
     year: "May 2025 – Present",
-    title: "AI Engineer / Research Assistant",
+    title: "ML Engineer / Research Assistant",
     company: "Beckman Institute, UIUC",
     location: "Champaign, IL",
     period: "Sept 2025 – May 2026",
@@ -71,7 +71,7 @@ const roles: RoleEntry[] = [
   {
     id: "aces",
     year: "Feb 2025 – May 2025",
-    title: "AI Engineer (Research Assistant)",
+    title: "AI Engineer / Research Assistant",
     company: "ACES, UIUC",
     location: "Champaign, IL",
     period: "Aug 2025 – Dec 2025",

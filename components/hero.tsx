@@ -53,7 +53,7 @@ const Hero = () => (
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-3"
             >
               <a
-                href="https://www.linkedin.com/in/yegusanjana/"
+                href="https://www.linkedin.com/in/yegu-sanjana/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="View LinkedIn"

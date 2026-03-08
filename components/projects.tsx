@@ -67,6 +67,13 @@ const projects = [
     skills: ["Python", "MongoDB", "JavaScript", "HTML", "CSS"],
     github: "https://github.com/yegusanjana/Car-Wash-Booking-Application",
   },
+  {
+    title: "Digital Agriculture RAG Advisor",
+    date: "Nov 2025",
+    description: "Retrieval-Augmented Generation (RAG) system for digital agriculture, combining advanced LLMs (Llama, Qwen, Mistral, Phi-3) with a curated knowledge base of pest and disease management guides. Built a Streamlit web interface for interactive queries, FAISS vector search for efficient similarity retrieval, and batch processing CLI. Led pipeline improvements for data ingestion and extensible architecture. Provided actionable advice for crop disease management and integrated multiple LLM providers for robust responses.",
+    skills: ["Python", "Streamlit", "FAISS", "RAG", "LLM Integration", "Data Ingestion"],
+    github: "https://github.com/Saurav51/digital-ag-rag-advisor",
+  },
 ]
 
 const Projects = () => (
