@@ -11,6 +11,13 @@ const projects = [
     skills: ["C++", "SIMD", "Lock-free Data Structures", "mmap", "Multithreading", "Zero-Copy I/O"],
   },
   {
+    title: "Digital Agriculture RAG Advisor",
+    date: "Nov 2025",
+    description: "Retrieval-Augmented Generation (RAG) system for digital agriculture, combining advanced LLMs (Llama, Qwen, Mistral, Phi-3) with a curated knowledge base of pest and disease management guides. Built a Streamlit web interface for interactive queries, FAISS vector search for efficient similarity retrieval, and batch processing CLI. Led pipeline improvements for data ingestion and extensible architecture. Provided actionable advice for crop disease management and integrated multiple LLM providers for robust responses.",
+    skills: ["Python", "Streamlit", "FAISS", "RAG", "LLM Integration", "Data Ingestion"],
+    github: "https://github.com/Saurav51/digital-ag-rag-advisor",
+  },
+  {
     title: "Yield Prediction with NDVI",
     date: "Aug 2025",
     description: "Geospatial ML pipeline to forecast county-level crop yields from satellite NDVI and USDA data. Achieved Linear R² 0.993 / RMSE 0.811 and RF R² 0.952 / RMSE 2.172, with explainable coefficients and feature importances.",
@@ -66,13 +73,6 @@ const projects = [
     description: "Full-stack web app for scheduling and managing car wash appointments. Enabled admin dashboards and streamlined booking workflows.",
     skills: ["Python", "MongoDB", "JavaScript", "HTML", "CSS"],
     github: "https://github.com/yegusanjana/Car-Wash-Booking-Application",
-  },
-  {
-    title: "Digital Agriculture RAG Advisor",
-    date: "Nov 2025",
-    description: "Retrieval-Augmented Generation (RAG) system for digital agriculture, combining advanced LLMs (Llama, Qwen, Mistral, Phi-3) with a curated knowledge base of pest and disease management guides. Built a Streamlit web interface for interactive queries, FAISS vector search for efficient similarity retrieval, and batch processing CLI. Led pipeline improvements for data ingestion and extensible architecture. Provided actionable advice for crop disease management and integrated multiple LLM providers for robust responses.",
-    skills: ["Python", "Streamlit", "FAISS", "RAG", "LLM Integration", "Data Ingestion"],
-    github: "https://github.com/Saurav51/digital-ag-rag-advisor",
   },
 ]
 
