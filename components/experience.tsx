@@ -5,49 +5,14 @@ import { Building2, Calendar } from "lucide-react"
 
 const experiences = [
   {
-    company: "Truvara Technologies LLP",
-    title: "Software Engineer",
-    period: "May 2025 – Jul 2025",
-    details: [
-      "Built and deployed a scalable GRC platform (Next.js, TypeScript) for 500+ users.",
-      "Integrated Strapi CMS for real-time content updates, reducing release overhead by 60%.",
-      "Developed 30+ reusable UI components (Radix UI, Tailwind) and refined UX via user feedback."
-    ],
-    skills: ["Next.js", "TypeScript", "React", "Tailwind", "Strapi", "REST APIs"]
-  },
-  {
-    company: "Ozone Cloud",
-    title: "Software Engineer",
-    period: "Jul 2023 – Dec 2024",
-    details: [
-      "Revamped full-stack architecture with modern standards; earned Developer of the Month (Mar 2024).",
-      "Enhanced Tekton CI/CD pipelines, automating 15+ workflows and reducing manual effort by 70%.",
-      "Engineered Velero-based backup/restore across AWS, GCP, Azure, and MinIO for reliable multi-cloud recovery.",
-      "Optimized Kubernetes manifests and containerization for high-volume deployments.",
-      "Streamlined 50+ service integrations, improving security posture and test coverage."
-    ],
-    skills: ["Golang", "Kubernetes", "Tekton", "Velero", "AWS", "GCP", "Azure", "Docker", "CI/CD"]
-  },
-  {
-    company: "Ozone Cloud",
-    title: "Trainee Software Engineer",
-    period: "Jan 2023 – Jun 2023",
-    details: [
-      "Collaborated in a 5-member team to implement a Backstage developer portal, reducing onboarding time.",
-      "Co-developed blockchain MVP using Agile methods, accelerating prototyping and validation.",
-      "Authored 50+ automated test cases, cutting production defects by 15%."
-    ],
-    skills: ["Golang", "Blockchain", "Agile", "QA Automation"]
-  },
-  {
-    company: "Level UP",
-    title: "Student Intern",
+    company: "LevelUp Learning",
+    title: "Software Engineer Intern",
     period: "May 2022 – Jul 2022",
     details: [
-      "Designed Figma templates for web pages.",
-      "Maintained website blogs via WordPress."
+      "Designed and implemented modular full-stack components and RESTful APIs, following strict OOP and Clean Code principles to enhance platform scalability.",
+      "Collaborated on database optimization and bug fixes, improving application performance and ensuring high-quality software delivery for educational platforms."
     ],
-    skills: ["Figma", "WordPress"]
+    skills: ["Full-Stack Development", "RESTful APIs", "OOP", "Database Optimization"]
   }
 ];
 
