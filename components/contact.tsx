@@ -20,8 +20,8 @@ const Contact = () => (
                 <Mail className="w-8 h-8 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Email</h3>
-              <a href="mailto:ya11@illinois.edu" className="text-primary hover:text-primary/80 transition-colors">
-                ya11@illinois.edu
+              <a href="mailto:yegusanjanaannamalai@gmail.com" className="text-primary hover:text-primary/80 transition-colors">
+                yegusanjanaannamalai@gmail.com
               </a>
             </div>
             <div className="text-center">
@@ -55,7 +55,7 @@ const Contact = () => (
           </div>
           <div className="text-center mt-8 pt-8 border-t border-border">
             <Button
-              onClick={() => window.open("mailto:ya11@illinois.edu")}
+              onClick={() => window.open("mailto:yegusanjanaannamalai@gmail.com")}
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-3"
             >
               <Mail className="w-4 h-4 mr-2" />
